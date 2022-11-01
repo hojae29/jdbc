@@ -22,6 +22,11 @@ import static hello.jdbc.connection.ConnectionConst.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
+/**
+ * 트랜잭션 - @Transactional AOP
+ * 스프링 트랜잭션 AOP를 사용하려면 스프링 컨테이너가 필요하다.
+ */
+
 @Slf4j
 @SpringBootTest
 class MemberServiceV3_3Test {

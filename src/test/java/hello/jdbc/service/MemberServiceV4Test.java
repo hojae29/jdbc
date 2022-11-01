@@ -34,6 +34,7 @@ class MemberServiceV4Test {
     @TestConfiguration
     static class TestConfig{
 
+        //DataSource는 application.properties 파일에 있는 jdbc 설정으로 스프링이 알아서 주입
         @Autowired
         DataSource dataSource;
 
