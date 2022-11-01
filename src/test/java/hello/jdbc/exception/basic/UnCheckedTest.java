@@ -5,7 +5,7 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 @Slf4j
-public class UncheckedTest {
+public class UnCheckedTest {
 
     @Test
     void unchecked_catch(){
