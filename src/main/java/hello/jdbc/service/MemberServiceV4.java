@@ -2,7 +2,6 @@ package hello.jdbc.service;
 
 import hello.jdbc.domain.Member;
 import hello.jdbc.repository.MemberRepository;
-import hello.jdbc.repository.MemberRepositoryV4_1;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,11 +17,11 @@ public class MemberServiceV4 {
     private final MemberRepository memberRepository;
 
 
-    public MemberServiceV4(MemberRepositoryV4_1 memberRepository) {
+    public MemberServiceV4(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
 
-    //순수한 비즈니스 로직만 남기고 트랙잰션에 관련된 코드는 모두 제거
+    //순수한 비즈니스 로직만 남기고 트랜잭션에 관련된 코드는 모두 제거
     @Transactional
     public void accountTransfer(String fromId, String toId, int money) {
         bizLogic(fromId, toId, money);

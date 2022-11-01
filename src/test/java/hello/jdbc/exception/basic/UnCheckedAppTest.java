@@ -4,7 +4,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.net.ConnectException;
 import java.sql.SQLException;
 
 @Slf4j
